@@ -10,3 +10,14 @@ Custom Css
     filter: invert(1);
     background-color: #000000;
 }
+
+.coz-red-section {
+    background-color: #BE1E2D !important;
+}
+
+.coz-red-section h1,
+.coz-red-section h2,
+.coz-red-section h5,
+.coz-red-section p {
+    color: #ffffff !important;
+}
