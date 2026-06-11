@@ -1,7 +1,9 @@
 /*
 Custom Css
 */
-
+.navbar-brand img {
+    height: 25px;
+}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
