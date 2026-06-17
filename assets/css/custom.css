@@ -25,3 +25,8 @@ Custom Css
 .coz-hero-section {
     background-color: #BE1E2D !important;
 }
+
+.carousel-item {
+    max-height: 450px;
+    overflow: hidden;
+}
