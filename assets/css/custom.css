@@ -175,9 +175,10 @@ section .fw-bold {
 
 /* Fix product description color */
 .coz-product-desc {
-    color: #555555 !important;
+    color: #000000 !important;
     font-size: 13px;
 }
+
 
 /* Fix product name color */
 .coz-product-name {
@@ -187,4 +188,12 @@ section .fw-bold {
 /* Extend red section padding */
 .coz-red-section {
     padding-bottom: 80px !important;
+}
+
+.coz-product-name {
+    color: #000000 !important;
+}
+
+.coz-product-price {
+    color: #BE1E2D !important;
 }
