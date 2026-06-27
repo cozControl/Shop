@@ -141,13 +141,14 @@ Custom Css
     font-size: 16px;
     margin-bottom: 4px;
     text-transform: uppercase;
+    color: #111111;
 }
 
-/* .coz-product-desc {
+.coz-product-desc {
     font-size: 13px;
     color: #888;
     margin: 0;
-} */
+}
 
 .coz-view-all-btn {
     display: inline-block;
@@ -182,32 +183,15 @@ section .fw-bold {
 
 
 /* Fix product name color */
+/* Product card text colors */
 .coz-product-name {
-    color: #000000 !important;
-    font-weight: 700 !important;
+    color: #111111 !important;
 }
 
-/* Extend red section padding */
-.coz-red-section {
-    padding-bottom: 80px !important;
-}
-
-.coz-product-name {
-    color: #000000 !important;
+.coz-product-desc {
+    color: #555555 !important;
 }
 
 .coz-product-price {
     color: #BE1E2D !important;
-}
-
-.coz-product-price {
-    color: #BE1E2D;
-}
-
-.coz-product-name {
-    color: #111111;
-}
-
-.coz-product-desc {
-    color: #555555;
 }
