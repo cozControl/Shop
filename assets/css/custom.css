@@ -199,3 +199,15 @@ section .fw-bold {
 .coz-product-price {
     color: #BE1E2D !important;
 }
+
+.coz-product-price {
+    color: #BE1E2D;
+}
+
+.coz-product-name {
+    color: #111111;
+}
+
+.coz-product-desc {
+    color: #555555;
+}
