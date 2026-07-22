@@ -197,6 +197,9 @@ section .fw-bold {
 }
 
 @media (max-width: 991px) {
+    .navbar > .container {
+        position: relative;
+    }
     .navbar-brand {
         position: absolute;
         left: 50%;
