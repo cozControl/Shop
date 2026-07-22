@@ -195,3 +195,11 @@ section .fw-bold {
 .coz-product-price {
     color: #BE1E2D !important;
 }
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
