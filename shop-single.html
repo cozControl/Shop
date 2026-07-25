@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Child of God Black – Cozcontrol</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <style>
+        .product-section {
+            background-color: #f8f8f8;
+            padding: 60px 0;
+        }
+
+        .main-product-img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .thumb-img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.2s;
+        }
+
+        .thumb-img:hover,
+        .thumb-img.active {
+            border: 2px solid #BE1E2D;
+        }
+
+        .product-title {
+            font-size: 28px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #111111;
+            margin-bottom: 8px;
+        }
+
+        .product-price {
+            font-size: 22px;
+            font-weight: 700;
+            color: #BE1E2D;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .product-desc {
+            font-size: 14px;
+            color: #555555;
+            line-height: 2;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+        }
+
+        .size-label {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #111;
+            margin-bottom: 10px;
+        }
+
+        .size-btn {
+            width: 44px;
+            height: 44px;
+            border: 2px solid #111111;
+            background: transparent;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-right: 8px;
+            transition: all 0.2s;
+        }
+
+        .size-btn:hover,
+        .size-btn.active {
+            background-color: #111111;
+            color: #fff;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 24px 0;
+        }
+
+        .whatsapp-order-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #25D366;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding: 18px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-decoration: none;
+            transition: background 0.2s;
+            margin-top: 16px;
+        }
+
+        .whatsapp-order-btn:hover {
+            background-color: #1ebe57;
+            color: #fff;
+        }
+
+        .whatsapp-order-btn i {
+            font-size: 20px;
+        }
+
+        .back-link {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #111;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 32px;
+        }
+
+        .back-link:hover {
+            color: #BE1E2D;
+        }
+
+        .product-meta {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #aaa;
+            margin-bottom: 4px;
+        }
+
+        .section-accent {
+            width: 14px;
+            height: 28px;
+            background-color: #BE1E2D;
+            border-radius: 3px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand align-self-center" href="index.html">
+                <img src="./assets/img/logo.png" alt="COZCONTROL" style="height: 42px; max-width: 220px; object-fit: contain;">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Join Our Community</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+
+            <!-- Back Link -->
+            <a href="shop.html" class="back-link">
+                <i class="fa fa-arrow-left"></i> Back to Shop
+            </a>
+
+            <div class="row g-5">
+
+                <!-- Left: Images -->
+                <div class="col-12 col-md-6">
+                    <img id="mainImage" src="./assets/img/feature_prod_01.jpg" alt="Child of God Black" class="main-product-img mb-3">
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img src="./assets/img/feature_prod_01.jpg" alt="View 1" class="thumb-img active" onclick="changeImage(this)">
+                        </div>
+                        <div class="col-4">
+                            <img src="./assets/img/feature_prod_02.jpg" alt="View 2" class="thumb-img" onclick="changeImage(this)">
+                        </div>
+                        <div class="col-4">
+                            <img src="./assets/img/feature_prod_03.jpg" alt="View 3" class="thumb-img" onclick="changeImage(this)">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Details -->
+                <div class="col-12 col-md-6">
+
+                    <div class="section-accent"></div>
+                    <p class="product-meta">Cozcontrol — SS2026</p>
+                    <h1 class="product-title">Child of God Black</h1>
+                    <p class="product-price">35,000 TZS</p>
+
+                    <p class="product-desc">
+                        Heavy Material (250 GSM), 100% cotton, Boxy Fit.<br>
+                        Born from the streets of Dar es Salaam. Every piece carries a message.
+                    </p>
+
+                    <hr class="divider">
+
+                    <!-- Size Selector -->
+                    <p class="size-label">Select Size</p>
+                    <div class="mb-4" id="sizeSelector">
+                        <button class="size-btn" onclick="selectSize(this)">S</button>
+                        <button class="size-btn" onclick="selectSize(this)">M</button>
+                        <button class="size-btn" onclick="selectSize(this)">L</button>
+                        <button class="size-btn" onclick="selectSize(this)">XL</button>
+                    </div>
+
+                    <hr class="divider">
+
+                    <!-- WhatsApp Order Button -->
+                    <a id="whatsappBtn" href="#" target="_blank" class="whatsapp-order-btn">
+                        <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                    </a>
+
+                    <p style="font-size: 11px; color: #aaa; text-align: center; margin-top: 12px; letter-spacing: 1px; text-transform: uppercase;">
+                        Select a size to place your order
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #000000;" id="tempaltemo_footer">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 pt-5">
+                    <h2 class="border-bottom pb-3 border-secondary">
+                        <img src="./assets/img/logo2.png" alt="CTRL" style="height: 35px;">
+                    </h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><i class="fas fa-map-marker-alt fa-fw"></i> Dar es Salaam, Tanzania.</li>
+                        <li><i class="fa fa-phone fa-fw"></i> <a class="text-decoration-none text-light" href="tel:+255693363601">+255 693 363 601</a></li>
+                        <li><i class="fa fa-envelope fa-fw"></i> <a class="text-decoration-none text-light" href="mailto:cozcontrool@gmail.com">cozcontrool@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-secondary">Quick Links</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none text-light" href="index.html">Home</a></li>
+                        <li><a class="text-decoration-none text-light" href="shop.html">Shop</a></li>
+                        <li><a class="text-decoration-none text-light" href="contact.html">Join Our Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-secondary"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline footer-icons">
+                        <li class="list-inline-item border border-secondary rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.facebook.com/cozcontrol"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-secondary rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/cozcontrol"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-secondary rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/cozcontrol"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-secondary rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/cozcontrol"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 py-3" style="border-top: 1px solid #333;">
+            <div class="container">
+                <p class="text-left text-light mb-0" style="font-size: 13px;">Copyright &copy; 2026 cozcontrol | Dar es Salaam, Tanzania.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        var selectedSize = '';
+        var phone = '255693363601';
+        var productName = 'Child of God Black';
+        var price = '35,000 TZS';
+
+        function selectSize(btn) {
+            document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            selectedSize = btn.textContent;
+            updateWhatsAppLink();
+        }
+
+        function updateWhatsAppLink() {
+            var message = 'Hi Cozcontrol! I would like to order:\n\nProduct: ' + productName + '\nSize: ' + selectedSize + '\nPrice: ' + price + '\n\nPlease confirm availability.';
+            var encoded = encodeURIComponent(message);
+            document.getElementById('whatsappBtn').href = 'https://wa.me/' + phone + '?text=' + encoded;
+            document.querySelector('.whatsapp-order-btn + p').textContent = 'Click to send your order on WhatsApp';
+        }
+
+        function changeImage(thumb) {
+            document.getElementById('mainImage').src = thumb.src;
+            document.querySelectorAll('.thumb-img').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
