@@ -206,3 +206,8 @@ section .fw-bold {
         transform: translateX(-50%);
     }
 }
+
+.nav-link.active,
+.nav-link:hover {
+    color: #BE1E2D !important;
+}
