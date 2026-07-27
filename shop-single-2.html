@@ -157,17 +157,16 @@
         var productName = 'Midnight Rider Longsleeve';
         var price = '40,000 TZS';
         function selectSize(btn) {
-            document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            selectedSize = btn.textContent;
-            var message = 'Hi Cozcontrol! I would like to order:\n\nProduct: ' + productName + '\nSize: ' + selectedSize + '\nPrice: ' + price + '\n\nPlease confirm availability.';
-document.getElementById('whatsappBtn').href = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(message);
-document.querySelector('.whatsapp-order-btn + p').textContent = 'Click to send your order on WhatsApp';
-
-var emailSubject = 'Order: ' + productName;
-var emailBody = 'Hi Cozcontrol,\n\nI would like to order:\n\nProduct: ' + productName + '\nSize: ' + selectedSize + '\nPrice: ' + price + '\n\nMy delivery address:\n[Please fill in your address]';
-document.getElementById('emailBtn').href = 'mailto:cozcontrool@gmail.com?subject=' + encodeURIComponent(emailSubject) + '&body=' + encodeURIComponent(emailBody);
-        }
+    document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedSize = btn.textContent;
+    var message = 'Hi Cozcontrol! I would like to order:\n\nProduct: ' + productName + '\nSize: ' + selectedSize + '\nPrice: ' + price + '\n\nPlease confirm availability.';
+    document.getElementById('whatsappBtn').href = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(message);
+    document.querySelector('.whatsapp-order-btn + p').textContent = 'Click to send your order on WhatsApp';
+    var emailSubject = 'Order: ' + productName;
+    var emailBody = 'Hi Cozcontrol,\n\nI would like to order:\n\nProduct: ' + productName + '\nSize: ' + selectedSize + '\nPrice: ' + price + '\n\nMy delivery address:\n[Please fill in your address]';
+    document.getElementById('emailBtn').href = 'mailto:cozcontrool@gmail.com?subject=' + encodeURIComponent(emailSubject) + '&body=' + encodeURIComponent(emailBody);
+}
         function changeImage(thumb) {
             document.getElementById('mainImage').src = thumb.src;
             document.querySelectorAll('.thumb-img').forEach(t => t.classList.remove('active'));
