@@ -370,7 +370,6 @@
     var encoded = encodeURIComponent(message);
     document.getElementById('whatsappBtn').href = 'https://wa.me/' + phone + '?text=' + encoded;
     document.querySelector('.whatsapp-order-btn + p').textContent = 'Click to send your order on WhatsApp';
-
     var emailSubject = 'Order: ' + productName;
     var emailBody = 'Hi Cozcontrol,\n\nI would like to order:\n\nProduct: ' + productName + '\nSize: ' + selectedSize + '\nPrice: ' + price + '\n\nMy delivery address:\n[Please fill in your address]';
     document.getElementById('emailBtn').href = 'mailto:cozcontrool@gmail.com?subject=' + encodeURIComponent(emailSubject) + '&body=' + encodeURIComponent(emailBody);
