@@ -27,6 +27,28 @@
         .whatsapp-order-btn { display: flex; align-items: center; justify-content: center; gap: 10px; background-color: #25D366; color: #fff; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; padding: 18px; border: none; cursor: pointer; width: 100%; text-decoration: none; transition: background 0.2s; margin-top: 16px; }
         .whatsapp-order-btn:hover { background-color: #1ebe57; color: #fff; }
         .whatsapp-order-btn i { font-size: 20px; }
+        .email-order-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+    color: #111111;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 18px;
+    border: 2px solid #111111;
+    width: 100%;
+    text-decoration: none;
+    transition: all 0.2s;
+    margin-top: 12px;
+}
+.email-order-btn:hover {
+    background-color: #111111;
+    color: #fff;
+}
         .back-link { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #111; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 32px; }
         .back-link:hover { color: #BE1E2D; }
         .product-meta { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #aaa; margin-bottom: 4px; }
@@ -82,6 +104,9 @@
                     <a id="whatsappBtn" href="#" target="_blank" class="whatsapp-order-btn">
                         <i class="fab fa-whatsapp"></i> Order via WhatsApp
                     </a>
+                    <a id="emailBtn" href="#" class="email-order-btn">
+                        <i class="fa fa-envelope"></i> Order via Email
+                    </a>
                     <p style="font-size: 11px; color: #aaa; text-align: center; margin-top: 12px; letter-spacing: 1px; text-transform: uppercase;">Select a size to place your order</p>
                 </div>
             </div>
@@ -136,8 +161,12 @@
             btn.classList.add('active');
             selectedSize = btn.textContent;
             var message = 'Hi Cozcontrol! I would like to order:\n\nProduct: ' + productName + '\nSize: ' + selectedSize + '\nPrice: ' + price + '\n\nPlease confirm availability.';
-            document.getElementById('whatsappBtn').href = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(message);
-            document.querySelector('.whatsapp-order-btn + p').textContent = 'Click to send your order on WhatsApp';
+document.getElementById('whatsappBtn').href = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(message);
+document.querySelector('.whatsapp-order-btn + p').textContent = 'Click to send your order on WhatsApp';
+
+var emailSubject = 'Order: ' + productName;
+var emailBody = 'Hi Cozcontrol,\n\nI would like to order:\n\nProduct: ' + productName + '\nSize: ' + selectedSize + '\nPrice: ' + price + '\n\nMy delivery address:\n[Please fill in your address]';
+document.getElementById('emailBtn').href = 'mailto:cozcontrool@gmail.com?subject=' + encodeURIComponent(emailSubject) + '&body=' + encodeURIComponent(emailBody);
         }
         function changeImage(thumb) {
             document.getElementById('mainImage').src = thumb.src;
