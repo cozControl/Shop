@@ -211,3 +211,17 @@ section .fw-bold {
 .nav-link:hover {
     color: #BE1E2D !important;
 }
+
+/* Brand Typography */
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.product-title,
+.coz-product-name,
+.community-hero h1,
+.navbar-brand {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+}
