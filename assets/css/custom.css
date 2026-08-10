@@ -257,3 +257,9 @@ h1, h2, h3, h4, h5, h6,
 .carousel-control-next {
     display: none !important;
 }
+
+.whatsapp-order-btn,
+.email-order-btn,
+.snippe-pay-btn {
+    border-radius: 8px !important;
+}
