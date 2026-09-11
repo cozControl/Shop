@@ -10,8 +10,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libzip-dev \
         libpng-dev \
         libonig-dev \
+        libicu-dev \
         unzip \
-    && docker-php-ext-install pdo pdo_sqlite mbstring bcmath zip gd \
+    && docker-php-ext-install pdo pdo_sqlite mbstring bcmath zip gd intl \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
