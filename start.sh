@@ -11,12 +11,13 @@ touch "$DB_PATH"
 mkdir -p storage/framework/cache storage/framework/sessions storage/framework/testing storage/framework/views storage/logs storage/app/public bootstrap/cache
 chmod -R 775 storage bootstrap/cache
 
-# Not caching config: it freezes env vars (like APP_KEY) into a file at
-# boot time, so a later Variables change wouldn't take effect until the
-# next full rebuild rather than the next restart. Route/view caching is
-# safe since they don't depend on values that change via the dashboard.
-php artisan route:cache
-php artisan view:cache
+# Force-clear any cached config/routes/services from a previous boot.
+# If bootstrap/cache/config.php exists at all, Laravel uses it instead of
+# reading the live environment — regardless of whether this boot tries to
+# regenerate it — so a stale file here silently locks in old env values
+# (this is what caused APP_KEY to keep appearing missing).
+rm -f bootstrap/cache/config.php bootstrap/cache/routes-v7.php bootstrap/cache/services.php bootstrap/cache/packages.php
+
 php artisan migrate --force
 php artisan storage:link || true
 
