@@ -11,7 +11,10 @@ touch "$DB_PATH"
 mkdir -p storage/framework/cache storage/framework/sessions storage/framework/testing storage/framework/views storage/logs storage/app/public bootstrap/cache
 chmod -R 775 storage bootstrap/cache
 
-php artisan config:cache
+# Not caching config: it freezes env vars (like APP_KEY) into a file at
+# boot time, so a later Variables change wouldn't take effect until the
+# next full rebuild rather than the next restart. Route/view caching is
+# safe since they don't depend on values that change via the dashboard.
 php artisan route:cache
 php artisan view:cache
 php artisan migrate --force
