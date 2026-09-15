@@ -22,16 +22,10 @@ class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
-        \Illuminate\Support\Facades\Log::info('AdminPanelProvider::panel() boot check', [
-            'config_app_key_present' => (bool) config('app.key'),
-            'getenv_app_key_present' => (bool) getenv('APP_KEY'),
-            'app_key_prefix' => config('app.key') ? substr(config('app.key'), 0, 10) : null,
-        ]);
-
         return $panel
             ->default()
             ->id('admin')
-            ->path('admin')
+            ->path('cozctrl')
             ->login()
             ->colors([
                 'primary' => Color::Amber,
